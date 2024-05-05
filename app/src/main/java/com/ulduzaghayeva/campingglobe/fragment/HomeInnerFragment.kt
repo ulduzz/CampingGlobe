@@ -11,10 +11,10 @@ import com.ulduzaghayeva.campingglobe.adapter.CampAdapter
 import com.ulduzaghayeva.campingglobe.R
 import com.ulduzaghayeva.campingglobe.databinding.FragmentHomeInnerBinding
 import com.ulduzaghayeva.campingglobe.modelshomedata.Camp
+import com.ulduzaghayeva.campingglobe.fragment.CardDetailFragment
 
+class HomeInnerFragment : Fragment(), CampAdapter.OnItemClickListener {
 
-
-class HomeInnerFragment : Fragment() {
     private lateinit var GridView: RecyclerView
     private lateinit var binding: FragmentHomeInnerBinding
 
@@ -23,15 +23,10 @@ class HomeInnerFragment : Fragment() {
         Camp("Samur Camp", 80, "AZN", "2–3 November", R.drawable.img_16) ,
         Camp("Qabala Camp", 40, "AZN", "2-3 Noyabr", R.drawable.img_18),
         Camp("İsmayilli Camp", 55, "AZN", "2–3 November", R.drawable.img_19) ,
-                Camp("Qaranohur Camp", 75, "AZN", "2-3 Noyabr", R.drawable.img_3),
-                Camp("GoyGol Camp", 80, "AZN", "2–3 November", R.drawable.img_16) ,
-                Camp("Lahij Camp", 40, "AZN", "2-3 Noyabr", R.drawable.img_18),
-
+        Camp("Qaranohur Camp", 75, "AZN", "2-3 Noyabr", R.drawable.img_3),
+        Camp("GoyGol Camp", 80, "AZN", "2–3 November", R.drawable.img_16) ,
+        Camp("Lahij Camp", 40, "AZN", "2-3 Noyabr", R.drawable.img_18),
     )
-
-
-
-
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -43,11 +38,17 @@ class HomeInnerFragment : Fragment() {
         GridView = binding.recyclerView
         GridView.layoutManager = GridLayoutManager(context, 2)
 
-
-        val adapter = CampAdapter(camps)
+        val adapter = CampAdapter(camps, this)
         GridView.adapter = adapter
 
         return view
     }
-}
 
+    override fun onItemClick(camp: Camp) {
+        val fragment = CardDetailFragment()
+        val transaction = requireActivity().supportFragmentManager.beginTransaction()
+        transaction.replace(R.id.rec, fragment)
+        transaction.addToBackStack(null)
+        transaction.commit()
+    }
+}

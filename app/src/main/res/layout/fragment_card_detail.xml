@@ -9,6 +9,7 @@
     android:background="@color/blue">
 
 
+
     <ImageView
         android:id="@+id/detailImage"
         android:layout_width="match_parent"
