@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1067669195582",
+    "project_id": "campingglobe-3f443",
+    "storage_bucket": "campingglobe-3f443.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1067669195582:android:dac9d1bcb7f0a94d6afa6f",
+        "android_client_info": {
+          "package_name": "com.ulduzaghayeva.campingglobe"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA1bZMXoxQFfOYk9Ekqoh8sEYiABoqzV60"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
