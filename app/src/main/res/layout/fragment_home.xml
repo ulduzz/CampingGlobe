@@ -19,47 +19,18 @@
             android:layout_height="match_parent">
 
             <ImageView
-                android:layout_width="158dp"
-                android:layout_height="41dp"
+                android:layout_width="200dp"
+                android:layout_height="66dp"
                 android:layout_marginStart="1dp"
                 android:layout_marginTop="1dp"
                 android:src="@drawable/campingicon"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
-            <TextView
-                android:id="@+id/Text5"
-                android:layout_width="161dp"
-                android:layout_height="25dp"
-                android:layout_marginStart="13dp"
-                android:gravity="center"
-                android:text="Səfərə hazırsan?"
-                android:textSize="20sp"
-                android:textStyle="bold"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.971" />
 
-            <ImageView
-                android:id="@+id/img1ImageView"
-                android:layout_width="28dp"
-                android:layout_height="28dp"
-                android:layout_marginStart="336dp"
-                android:src="@drawable/search"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
 
-            <ImageView
-                android:id="@+id/filterView"
-                android:layout_width="28dp"
-                android:layout_height="28dp"
-                android:layout_marginStart="376dp"
-                android:src="@drawable/filter"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+
+
         </androidx.constraintlayout.widget.ConstraintLayout>
     </com.google.android.material.appbar.AppBarLayout>
 

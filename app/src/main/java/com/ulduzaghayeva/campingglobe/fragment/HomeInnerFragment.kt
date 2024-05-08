@@ -19,13 +19,13 @@ class HomeInnerFragment : Fragment(), CampAdapter.OnItemClickListener {
     private lateinit var binding: FragmentHomeInnerBinding
 
     private val camps = listOf(
-        Camp("Quba Camp", 75, "AZN", "2-3 Noyabr", R.drawable.img_3),
-        Camp("Samur Camp", 80, "AZN", "2–3 November", R.drawable.img_16) ,
-        Camp("Qabala Camp", 40, "AZN", "2-3 Noyabr", R.drawable.img_18),
-        Camp("İsmayilli Camp", 55, "AZN", "2–3 November", R.drawable.img_19) ,
-        Camp("Qaranohur Camp", 75, "AZN", "2-3 Noyabr", R.drawable.img_3),
-        Camp("GoyGol Camp", 80, "AZN", "2–3 November", R.drawable.img_16) ,
-        Camp("Lahij Camp", 40, "AZN", "2-3 Noyabr", R.drawable.img_18),
+        Camp("Quba Camp", 75, "AZN", "2-3 November", R.drawable.img_3),
+        Camp("Samur Camp", 80, "AZN", "10-14 October", R.drawable.img_16) ,
+        Camp("Qabala Camp", 40, "AZN", "1-2 June", R.drawable.img_18),
+        Camp("İsmayilli Camp", 55, "AZN", "9-10 May", R.drawable.img_19) ,
+        Camp("Qaranohur Camp", 65, "AZN", "8-9 April", R.drawable.img_20),
+        Camp("GoyGol Camp", 90, "AZN", "3-7 December", R.drawable.img_21) ,
+        Camp("Lahij Camp", 45, "AZN", "6-8 July", R.drawable.img_18),
     )
 
     override fun onCreateView(

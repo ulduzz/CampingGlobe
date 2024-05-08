@@ -11,10 +11,12 @@ import androidx.recyclerview.widget.RecyclerView
 import com.ulduzaghayeva.campingglobe.R
 import com.ulduzaghayeva.campingglobe.modelshomedata.Camp
 
+
 class CampAdapter(
     private val camps: List<Camp>,
     private val itemClickListener: OnItemClickListener
 ) : RecyclerView.Adapter<CampAdapter.ViewHolder>() {
+
 
     interface OnItemClickListener {
         fun onItemClick(camp: Camp)
@@ -28,11 +30,18 @@ class CampAdapter(
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         val camp = camps[position]
         holder.bind(camp, itemClickListener)
+
     }
 
     override fun getItemCount(): Int {
         return camps.size
     }
+
+
+
+
+
+
 
     class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         val CampName: TextView = itemView.findViewById(R.id.Text5)

@@ -5,6 +5,9 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.text.TextUtils
 import android.util.Patterns
+import com.google.android.gms.auth.api.signin.GoogleSignIn
+import com.google.android.gms.auth.api.signin.GoogleSignInClient
+import com.google.android.gms.auth.api.signin.GoogleSignInOptions
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.ktx.auth
 import com.google.firebase.ktx.Firebase
@@ -15,16 +18,26 @@ import com.ulduzaghayeva.campingglobe.databinding.ActivitySignInBinding
 class SignInActivity : BaseActivity() {
     private var binding:ActivitySignInBinding? = null
     private lateinit var auth: FirebaseAuth
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivitySignInBinding.inflate(layoutInflater)
         setContentView(binding?.root)
         auth = Firebase.auth
 
+
+
+
         binding?.tvRegister?.setOnClickListener{
             startActivity(Intent(this,SignUpActivity::class.java))
             finish()
         }
+
+        binding?.tvForgotPassword?.setOnClickListener{
+            startActivity(Intent(this,ForgetPasswordActivity::class.java))
+        }
+
+
         binding?.btnSignIn?.setOnClickListener {
             signUser()
         }

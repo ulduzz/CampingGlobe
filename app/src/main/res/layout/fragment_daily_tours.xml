@@ -9,6 +9,7 @@
 
 
     <androidx.cardview.widget.CardView
+        android:id="@+id/cardview1"
         android:layout_width="match_parent"
         android:layout_height="100dp"
         android:layout_marginTop="30dp"
@@ -37,7 +38,7 @@
                 android:id="@+id/text1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Samur Kampi"
+                android:text="Shahdag National Park"
                 android:textStyle="bold"
                 tools:layout_editor_absoluteX="195dp"
                 tools:layout_editor_absoluteY="7dp"
@@ -61,7 +62,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="2-3 December"
+                android:text="7-8 May"
                 tools:layout_editor_absoluteX="191dp"
                 tools:layout_editor_absoluteY="65dp"
                 android:layout_marginTop="5dp"
@@ -98,5 +99,191 @@
 
 
     </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardview2"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        app:cardCornerRadius="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardview1">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white">
+
+            <ImageView
+                android:id="@+id/dailytour2"
+                android:layout_width="187dp"
+                android:layout_height="99dp"
+                android:background="@drawable/talysh"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/text2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Talysh Mountains"
+                android:textStyle="bold"
+                tools:layout_editor_absoluteX="195dp"
+                tools:layout_editor_absoluteY="7dp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/dailytour2"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="10dp"/>
+
+            <TextView
+                android:id="@+id/textcurrency2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="75 AZN per-adult"
+                tools:layout_editor_absoluteX="191dp"
+                tools:layout_editor_absoluteY="50dp"
+                app:layout_constraintStart_toEndOf="@id/dailytour2"
+                android:layout_marginStart="10dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_marginBottom="35dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="9-10 May"
+                tools:layout_editor_absoluteX="191dp"
+                tools:layout_editor_absoluteY="65dp"
+                android:layout_marginTop="5dp"
+                app:layout_constraintTop_toBottomOf="@id/textcurrency2"
+                app:layout_constraintStart_toEndOf="@id/dailytour2"
+                android:layout_marginStart="10dp"/>
+
+            <ProgressBar
+                android:id="@+id/bar2"
+                style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                tools:layout_editor_absoluteX="191dp"
+                tools:layout_editor_absoluteY="29dp"
+                app:layout_constraintStart_toEndOf="@id/dailytour2"
+                android:layout_marginStart="10dp"
+                android:max="20"
+                android:progress="0"
+                app:layout_constraintTop_toBottomOf="@id/text2"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="18/20"
+                tools:layout_editor_absoluteX="297dp"
+                tools:layout_editor_absoluteY="26dp"
+                app:layout_constraintStart_toEndOf="@id/bar2"
+                android:layout_marginStart="5dp"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginTop="25dp"/>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardview3"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        app:cardCornerRadius="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardview2">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white">
+
+            <ImageView
+                android:id="@+id/dailytour3"
+                android:layout_width="187dp"
+                android:layout_height="99dp"
+                android:background="@drawable/lahij"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/text3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Lahij Village"
+                android:textStyle="bold"
+                tools:layout_editor_absoluteX="195dp"
+                tools:layout_editor_absoluteY="7dp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/dailytour3"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="10dp"/>
+
+            <TextView
+                android:id="@+id/textcurrency3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="80 AZN per-adult"
+                tools:layout_editor_absoluteX="191dp"
+                tools:layout_editor_absoluteY="50dp"
+                app:layout_constraintStart_toEndOf="@id/dailytour3"
+                android:layout_marginStart="10dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_marginBottom="35dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="9-10 May"
+                tools:layout_editor_absoluteX="191dp"
+                tools:layout_editor_absoluteY="65dp"
+                android:layout_marginTop="5dp"
+                app:layout_constraintTop_toBottomOf="@id/textcurrency3"
+                app:layout_constraintStart_toEndOf="@id/dailytour3"
+                android:layout_marginStart="10dp"/>
+
+            <ProgressBar
+                android:id="@+id/bar3"
+                style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                tools:layout_editor_absoluteX="191dp"
+                tools:layout_editor_absoluteY="29dp"
+                app:layout_constraintStart_toEndOf="@id/dailytour3"
+                android:layout_marginStart="10dp"
+                android:max="20"
+                android:progress="0"
+                app:layout_constraintTop_toBottomOf="@id/text3"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="19/20"
+                tools:layout_editor_absoluteX="297dp"
+                tools:layout_editor_absoluteY="26dp"
+                app:layout_constraintStart_toEndOf="@id/bar3"
+                android:layout_marginStart="5dp"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginTop="25dp"/>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

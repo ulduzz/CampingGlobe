@@ -6,21 +6,20 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".fragment.CardDetailFragment"
     android:id="@+id/cardDetailFragment"
-    android:background="@color/blue">
-
+    android:background="@color/white">
 
 
     <ImageView
         android:id="@+id/detailImage"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:src="@drawable/detailphoto"
+        android:layout_width="960dp"
+        android:layout_height="357dp"
+        android:src="@drawable/qaranohur"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.542"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.092" />
+        app:layout_constraintVertical_bias="0.0" />
 
     <TextView
         android:id="@+id/detailTitle"
@@ -28,14 +27,212 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="15dp"
         android:text="Qaranohur Camp"
-        android:textColor="@color/blue"
+        android:textColor="@color/black"
         android:textSize="25dp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginStart="10dp"
         app:layout_constraintHorizontal_bias="0.072"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/detailImage"
         app:layout_constraintVertical_bias="0.33" />
+
+    <ImageView
+        android:id="@+id/pb"
+        android:layout_width="223dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="8dp"
+        android:src="@drawable/pb"
+        app:layout_constraintTop_toBottomOf="@id/detailTitle"
+        app:layout_goneMarginTop="15dp"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteX="10dp"
+        android:layout_margin="10dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="56dp"
+        android:text="17 / 20"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.105"
+        app:layout_constraintStart_toEndOf="@id/pb"
+        app:layout_constraintTop_toBottomOf="@id/detailImage"
+        android:layout_marginStart="10dp"/>
+    <TextView
+        android:id="@+id/text4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/pb"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="10dp"
+        android:text="17 out of 20 places have been booked"
+        android:textSize="15dp"/>
+
+    <TextView
+        android:id="@+id/text6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text4"
+        android:layout_marginStart="10dp"
+        android:text="TOUR DETAILS"
+        android:layout_marginTop="15dp"
+        />
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardview1"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="30dp"
+        app:cardCornerRadius="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text6">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="194dp"
+            android:background="@color/white">
+            <TextView
+                android:id="@+id/price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:text="Price"
+                android:textStyle="bold"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:textSize="25dp"
+                />
+
+            <TextView
+                android:id="@+id/location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="32dp"
+                android:text="Location"
+                android:textSize="25dp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/price"
+                android:text="Time"
+                android:textStyle="bold"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="60dp"
+                android:textSize="25dp"
+                />
+
+            <TextView
+                android:id="@+id/temperature"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="60dp"
+                android:layout_marginEnd="16dp"
+                android:text="Temperature"
+                android:textSize="25dp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/location" />
+
+            <ImageView
+                android:id="@+id/pricei"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                app:layout_constraintTop_toBottomOf="@id/price"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginStart="10dp"
+                android:src="@drawable/walleticon"
+                />
+
+            <ImageView
+                android:id="@+id/loci"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="92dp"
+                android:src="@drawable/iccalendar"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/price" />
+
+            <ImageView
+                android:id="@+id/timei"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="180dp"
+                android:layout_marginTop="4dp"
+                android:src="@drawable/map"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/price" />
+
+            <ImageView
+                android:id="@+id/tempi"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginEnd="120dp"
+                android:src="@drawable/thermometer"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/temperature" />
+
+            <TextView
+                android:id="@+id/pricetext"
+                android:layout_width="187dp"
+                android:layout_height="70dp"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="8dp"
+                android:text="90 AZN"
+                android:textSize="20dp"
+                app:layout_constraintStart_toEndOf="@id/pricei"
+                app:layout_constraintTop_toBottomOf="@id/price" />
+
+            <TextView
+                android:id="@+id/loctext"
+                android:layout_width="187dp"
+                android:layout_height="70dp"
+                android:layout_marginStart="196dp"
+                android:layout_marginTop="100dp"
+                android:text="12°С-15°С "
+                android:textSize="20dp"
+                app:layout_constraintStart_toEndOf="@id/pricei"
+                app:layout_constraintTop_toBottomOf="@id/price" />
+
+            <TextView
+                android:layout_width="187dp"
+                android:layout_height="70dp"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="92dp"
+                android:text="15-16 October"
+                android:textSize="20dp"
+                app:layout_constraintStart_toEndOf="@id/pricei"
+                app:layout_constraintTop_toBottomOf="@id/price" />
+
+            <TextView
+                android:layout_width="154dp"
+                android:layout_height="59dp"
+                android:text="Ismayilli,Talistan Vilalage"
+                android:textSize="20dp"
+                tools:layout_editor_absoluteX="220dp"
+                tools:layout_editor_absoluteY="58dp"
+                app:layout_constraintStart_toEndOf="@id/timei"
+                android:layout_marginStart="2dp"
+                app:layout_constraintTop_toBottomOf="@id/location"/>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </androidx.cardview.widget.CardView>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
